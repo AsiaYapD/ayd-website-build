@@ -87,12 +87,56 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* general styles */
+/************ General Styles ************/
+
+html {
+  font-size: 16px;
+  color:#e2e3ed;
+
+}
+
+body {
+  font-family:'Open Sans', sans-serif;
+  font-size:1em;
+  text-align: left;
+
+}
+
+ul,ol {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+a {
+  color:#e2e3ed;
+  text-decoration: none;
+}
+
+h2 {
+  font-family:'Poppins', sans-serif;
+  font-size:1.875em;
+  font-weight: 500;
+}
+
+h3, h4 {
+  font-family:'Poppins', sans-serif;
+  font-size:1.125em;
+  font-weight: 500;
+  margin:20px 0;
+}
+
+p {
+  line-height: 1.285;
+  font-size:.875em;
+}
+
+address {
+  font-style: normal;
+}
 
 .content-wrapper{
   width:90%;
-  margin:50px;
-
+  margin:50px 0;
 }
 
 /* -------- Base Header - Footer Styles ----------*/
@@ -104,7 +148,7 @@ footer {
   justify-content:center;
   align-items: center;
   flex-flow:row wrap; 
-
+  background-color: #202322;
 }
 
 header{
@@ -128,6 +172,7 @@ header .content-wrapper {
   width:100%;
   height: 1px;
   margin:10px 0 20px 0;
+  background-color: #3a3a3a;
 }
 
 header nav {
@@ -198,6 +243,7 @@ aside {
   justify-content:center;
   align-items: center;
   flex-flow:row wrap; 
+  background-color: #527158;
 }
 
 aside .content-wrapper {
@@ -262,6 +308,7 @@ p{
   display:flex;
   justify-content:center;
   flex-flow:row wrap; 
+  background-color: #2a423a;
 }
 
 .reviews h2{
@@ -284,6 +331,7 @@ p{
   justify-content:center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 
 }
 
@@ -305,6 +353,7 @@ p{
   justify-content:center;
   align-items: center;
   flex-flow:row wrap;
+  background-color: #527158;
 
 }
 
