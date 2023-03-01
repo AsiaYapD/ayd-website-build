@@ -550,10 +550,53 @@ footer .copywright {
 @media only screen and (min-width: 1200px) {
   /*desktop styles here*/
 
+/* General Styles*/
+.content-wrapper{
+  max-width:960px;
 }
 
-  /************** FAQ PAGE **************/
+/* Hero */
 
+.hero-area h1{
+  width:60%
+}
+
+/* Aside */
+aside .content-wrapper{
+  justify-content:space-around;
+}
+
+aside .content-wrapper .form-decription,
+aside .content-wrapper .form{
+  width:30%;
+}
+
+/* Features */
+.feaures h2{
+  width:90%
+}
+
+.features article{
+  flex-basis:33%;
+}
+
+/* Reviews */
+.reviews article div{
+  width:42%;
+}
+
+  /************** About page **************/
+.mission h2, .contact-section .contact-wrapper h2{
+  width:95%;
+}
+
+
+  /************** FAQ page **************/
+.faq h2{
+  width:100%;
+}
+
+}
 
 
 /* ==========================================================================
