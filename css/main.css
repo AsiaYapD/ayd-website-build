@@ -87,7 +87,16 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* general styles */
+
+.content-wrapper{
+  width:90%;
+  margin:50px;
+
+}
+
 /* -------- Base Header - Footer Styles ----------*/
+
 
 header,
 footer {
@@ -224,13 +233,13 @@ p{
   flex-flow:row wrap; 
 }
 
-.features h2{
-margin-bottom: 60px;  width:95%;
+.features h2{ 
+  margin-bottom: 60px;
 }
 
 .features article {
- width:63%;
- margin: 30px 0;
+  width:63%;
+  margin: 30px 0;
 }
 
 .features .features-item {
@@ -247,17 +256,12 @@ margin-bottom: 60px;  width:95%;
 }
 
 
-/* Main- reviews- Styles */
-
-h2 {
-  padding:50px 0 40px 0;
-}
+/* reviews- Styles */
 
 .reviews {
   display:flex;
   justify-content:center;
   flex-flow:row wrap; 
-  margin:50px 0;
 }
 
 .reviews h2{
@@ -290,7 +294,7 @@ h2 {
   flex-flow: row wrap;
 
 }
-.contact-content {
+.contact-content p{
   margin:0;
 }
 
@@ -305,11 +309,11 @@ h2 {
 }
 
 .faq .content-wrapper{
+  margin: 50px 0 0 0;
   display:flex;
   justify-content:center;
   align-items:center;
   flex-flow: row wrap;
-  margin: 50px 0 0 0;
   }
 
 .faq h2{
@@ -409,16 +413,148 @@ h2 {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /*tablet styles here*/
+
+/* General Styles*/
+.content-wrapper{
+  max-width:640px;
+  margin:100px 0;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+/* Header Styles*/
+
+header{
+  width:30%;
+  justify-content: space-around;
+  padding:33px 0;
 }
+
+header .content-wrapper{
+  justify-content: space-between;
+  width:100%;
+}
+
+header nav {
+  width:20%;
+}
+
+header nav ul{
+  justify-content:space-between;
+}
+
+.header-divider {
+  display:none;
+}
+
+/* Hero Area */
+
+/* Aside */
+
+aside .content-wrapper{
+  margin:50px 0;
+  display:flex;
+  justify-content:space-around;
+  flex-flow: row wrap;
+}
+aside .content-wrapper .form-decription,
+aside .content-wrapper .form{
+  width:40%;
+  margin:0;
+}
+
+  /* Features */
+
+.features article{
+  width:30%;
+  display:flex;
+  justify-content: space-around;
+  flex-flow:row wrap;
+  flex-basis:30%;
+}
+
+.features .features-item-description{
+  width:50%;
+  
+}
+
+  /* Reviews */
+
+.reviews article {
+  display: flex;
+  justify-content:space-between;
+}
+
+.reviews article div{
+  width:49%;
+}
+
+  /* Footer */
+
+.footer .content-wrapper{
+  width:65%;
+  margin: 100px 0;
+}
+
+.footer-content{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .contact{
+  margin-bottom:0;
+}
+
+footer .copywright {
+  width:100%;
+}
+
+  /************** About page **************/
+
+.mission-content{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding-top:20px;
+}
+
+.mission-content p{
+  width:45%;
+}
+
+.contact-section .content-wrapper h2{
+  width:80%;
+}
+
+.contact-content{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+}
+
+  /************** FAQ page **************/
+
+  .faq .content-wrapper{
+    justify-content: space-between;
+  }
+  
+  .faq-content{
+    flex-basis: 45%;
+  }
+
+  .faq h2{
+    width:100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /*desktop styles here*/
+
+}
+
+  /************** FAQ PAGE **************/
+
+
 
 /* ==========================================================================
    Print styles.
