@@ -308,11 +308,10 @@ input[type=button] {
 /* Main- features- Styles */
 
 .features {
-  background: url('../img/unplugged-retreat-features.jpg');
+  background: url('../img/unplugged-retreat-features.jpg') no-repeat;
   background-size:cover;
-  background-repeat: no-repeat;
   background-position:center;
-  display: flex;
+  display:flex;
   justify-content: center;
   flex-flow: row wrap;
 }
@@ -331,6 +330,11 @@ input[type=button] {
   justify-content: center;
   align-content: center;
   flex-flow: row wrap;
+}
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom:40px;
 }
 
 .features p {
