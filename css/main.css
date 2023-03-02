@@ -98,7 +98,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   text-align: left;
   color: #e2e3ed;
-
 }
 
 ul,
@@ -139,25 +138,29 @@ address {
   margin: 50px 0;
 }
 
+
+img {
+  width:100%;
+}
+
+figure {
+  margin:0;
+}
+
 /* -------- Base Header - Footer Styles ----------*/
 
 
 header,
 footer {
+  background-color: #202322;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: #202322;
 }
 
 header {
   padding: 15px 0;
-
-}
-
-header img {
-  width: 60%;
 }
 
 header .content-wrapper {
@@ -166,6 +169,14 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow:row wrap;
 }
 
 .header-divider {
@@ -185,7 +196,6 @@ header nav {
   font-weight: 700;
   font-weight: bold;
   text-transform: uppercase;
-
 }
 
 header nav ul {
@@ -215,7 +225,6 @@ footer .content-wrapper {
 
 footer .contact {
   margin-bottom: 50px;
-
 }
 
 footer .social-icons {
@@ -240,6 +249,10 @@ footer .copywright {
 /* Hero Styles */
 
 .hero-area {
+  background: url('../img/unplugged-retreat.jpg');
+  background-size:cover;
+  background-position:center;
+  min-height:500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -252,9 +265,6 @@ footer .copywright {
   font-weight: 500;
 }
 
-.hero-area img {
-  width: 100%;
-}
 
 /* Aside Styles */
 
@@ -268,19 +278,6 @@ aside {
 
 aside h2 {
   font-size: 1.875em;
-
-}
-
-aside .content-wrapper {}
-
-.form-decription {}
-
-h3 {
-  padding: 20px 0;
-}
-
-p {
-  margin-bottom: 30px;
 }
 
 aside .form {
@@ -311,6 +308,10 @@ input[type=button] {
 /* Main- features- Styles */
 
 .features {
+  background: url('../img/unplugged-retreat-features.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position:center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -337,7 +338,6 @@ input[type=button] {
   text-align: center;
 }
 
-
 /* reviews- Styles */
 
 .reviews {
@@ -350,18 +350,13 @@ input[type=button] {
 .reviews h2 {
   margin-bottom: 40px;
   line-height: 1;
-
 }
 
-.reviews h2 {
+.reviews h3 {
   width: 55%;
   padding: 20px 0;
 }
 
-
-.company-image {
-  width: 90%;
-}
 
 /* -------- About Page Styles ----------*/
 
@@ -371,7 +366,6 @@ input[type=button] {
   align-items: center;
   flex-flow: row wrap;
   background-color: #527158;
-
 }
 
 .contact-section {
@@ -380,7 +374,6 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-
 }
 
 .contact-content p {
@@ -409,7 +402,6 @@ input[type=button] {
 .faq h2 {
   margin-bottom: 40px;
   line-height: 1;
-
 }
 
 .faq-content {
@@ -558,6 +550,10 @@ input[type=button] {
   }
 
   /* Hero Area */
+  .hero-area {
+    min-height:600px;
+  }
+
   .hero-area h1 {
     font-size: 3em;
     line-height: 3em;
@@ -579,11 +575,6 @@ input[type=button] {
     margin: 0;
   }
 
-  h3 {
-    font-size: 1.5em;
-    line-height: 1.875;
-  }
-
   /* Features */
 
   .features article {
@@ -596,13 +587,10 @@ input[type=button] {
 
   .features h2 {
     margin-bottom: 20px;
-    font-size: 2.25em;
-    line-height: 3em;
   }
 
   .features .features-item-description {
     width: 62%;
-
   }
 
   /* Reviews */
@@ -616,6 +604,7 @@ input[type=button] {
     width: 85%;
   }
 
+  .reviews article figure,
   .reviews article div {
     width: 49%;
   }
@@ -627,30 +616,29 @@ input[type=button] {
 
   /* Footer */
 
-  .footer .content-wrapper {
+  footer .content-wrapper {
     width: 65%;
     margin: 100px 0;
   }
 
-  .footer-content {
+ footer .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
   }
 
-  .footer .contact {
+  footer .contact {
     margin-bottom: 0;
   }
 
   footer h4 {
     font-size: 1.5em;
     margin-bottom: 40px;
-    ;
   }
 
   footer p {
-    line-height: 1.125em;
+    line-height: 1.285em;
   }
 
   footer .copywright {
@@ -709,23 +697,12 @@ input[type=button] {
   /*desktop styles here*/
 
   /* General Styles*/
-
   header {
-    width: 33%;
-    justify-content: space-around;
     padding: 15px 0;
   }
 
   .content-wrapper {
     max-width: 960px;
-  }
-
-  header nav {
-    width: 20%;
-  }
-
-  header nav ul {
-    justify-content: space-between;
   }
 
   h2 {
@@ -745,8 +722,9 @@ input[type=button] {
   /* Hero */
 
   .hero-area h1 {
-    width: 60%;
+    width: 80%;
     font-size: 3.75em;
+    line-height: 1em;
   }
 
   /* Aside */
@@ -757,6 +735,10 @@ input[type=button] {
   aside .content-wrapper .form-decription,
   aside .content-wrapper .form {
     width: 30%;
+  }
+
+  .form-description p {
+    font-size: 1.125em;
   }
 
   /* Features */
