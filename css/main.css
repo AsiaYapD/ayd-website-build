@@ -202,7 +202,7 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
-
+  padding-left:0;
 }
 
 header nav ul li {
@@ -269,7 +269,6 @@ footer .copywright {
   font-weight: 500;
 }
 
-
 /* Aside Styles */
 
 aside {
@@ -324,9 +323,14 @@ input[type=button] {
   margin-bottom: 60px;
 }
 
+/****edit this bit in tablet and desktops****/
+
 .features article {
   width: 63%;
-  margin: 30px 0;
+  margin-top: 30px;
+  margin-bottom:30px;
+  margin-right:20%;
+  margin-left:20%;
 }
 
 .features .features-item {
@@ -392,13 +396,13 @@ input[type=button] {
   left:0;
 }
 
-
 .contact-section {
   background-color: #2a423a;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 40px 0px 40px 20px;
 }
 
 .contact-content p {
@@ -581,7 +585,7 @@ input[type=button] {
 
   .hero-area h1 {
     font-size: 3em;
-    line-height: 3em;
+    line-height: 1em;
     margin: 0;
   }
 
@@ -594,7 +598,7 @@ input[type=button] {
     flex-flow: row wrap;
   }
 
-  aside .content-wrapper .form-decription,
+  aside .content-wrapper .form-description,
   aside .content-wrapper .form {
     width: 40%;
     margin: 0;
@@ -608,30 +612,41 @@ input[type=button] {
     flex-flow: row wrap;
     flex-flow: column wrap;
     flex-basis: 50%;
+    margin:0%;
   }
 
   .features h2 {
     margin-bottom: 20px;
   }
 
+  .features .features-item,
   .features .features-item-description {
     width: 62%;
+    align-content: space-around;
+
   }
 
   /* Reviews */
-
-  .reviews article {
-    display: flex;
-    justify-content: space-between;
-  }
 
   .reviews h2 {
     width: 85%;
   }
 
-  .reviews article figure,
+  .reviews article {
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+    width:100%;
+  }
+
+ 
+
   .reviews article div {
     width: 49%;
+  }
+
+  .reviews article figure {
+    width:49%;
   }
 
   .reviews h3 {
