@@ -240,6 +240,7 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top:0;
 }
 
 footer .social-icons p i {
@@ -394,6 +395,7 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 50px 0 50px 20px;
 }
 
 .contact-content p {
@@ -695,7 +697,7 @@ input[type=button] {
   /********* contact section */ /**** NEED HELP!!!! ********************/
 
   .contact-section .contact-wrapper h2 {
-    width: 80%;
+    width: 50%;
   }
 
   .contact-content {
