@@ -694,16 +694,23 @@ input[type=button] {
     padding-bottom:45.5%;
   }
 
-  /********* contact section */ /**** NEED HELP!!!! ********************/
-
   .contact-section .contact-wrapper h2 {
-    width: 50%;
+    width: 80%;
+  }
+
+  .contact-sections {
+    display:flex;
+    flex-flow:row wrap;
+    align-items:baseline;
+    justify-content: space-between;
+
   }
 
   .contact-content {
     display:flex;
-    justify-content: space-between;
     align-items: flex-start;
+    flex-flow:column;
+    width:40%
   }
 
   .contact-content h4 {
@@ -813,6 +820,9 @@ input[type=button] {
     font-size: 3em;
   }
 
+  .contact-content {
+    width:40%;
+  }
   .contact-content h4 {
     font-size: 1.875em;
   }
